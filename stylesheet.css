@@ -1,0 +1,71 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    background-color: rgb(49, 96, 101);
+    font-family: Tahoma, Verdana, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    margin: 20px 0px 10px 60px;
+    font-size: 3.5em;
+}
+
+#navbar {
+    margin: 0px 0px 70px 100px;
+    color: #aaa;
+    font-style: italic;
+    font-size: 1.5em;
+}
+#tagline {
+    margin: 0px 0px 70px 100px;
+    color: #aaa;
+    font-style: italic;
+    font-size: 1.5em;
+}
+
+main {
+    background-color: #d2d2d2;
+    margin: 0px auto;
+    width: 800px;
+    height: 599px; /* this should be 600 but the current image is just a bad aspect ratio or something*/
+    /*background-image: url('./media/placeholder.jpg');*/
+    background-image: url('./media/testPageBackground.jpg');
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-size: 100%;
+    color: #000;
+}
+
+.interactable:hover {
+    cursor: pointer;
+}
+
+#imac {
+    width: 25%;
+    height: fit-content;
+    position: relative;
+    left: 32%;
+    top: 36%;
+}
+
+#leftArrow {
+    width: 15%;
+    height: fit-content;
+    position: relative;
+    left: -23%; /* this is so stupid, figure out the right (position:) value to use lol */
+    top: 70%;
+}
+
+#footer {
+    margin: 30px auto 50px auto;
+    width: fit-content;
+    color: #aaa;
+    font-style: italic;
+    font-size: 1em;
+    text-align: center;
+}
