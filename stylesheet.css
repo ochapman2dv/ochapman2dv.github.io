@@ -8,6 +8,9 @@ body {
     background-color: rgb(49, 96, 101);
     font-family: Tahoma, Verdana, sans-serif;
     color: #fff;
+    width: 100vw;
+    height: 100vh;
+    
 }
 
 h1 {
