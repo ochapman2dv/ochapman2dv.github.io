@@ -52,7 +52,7 @@ h3 {
     height: 20px;
 }
 
-main {
+.main {
     position: relative;
     background-color: #d2d2d2;
     margin: 0px auto;
@@ -70,6 +70,9 @@ main {
     }
 }
 
+#room1 {
+    background-image: url('./media/testPageBackground.jpg');
+}
 #imac {
     top: 28%;
     left: 27%;
@@ -77,23 +80,6 @@ main {
         width: 260px;
     }
 }
-
-#recordPlayer {
-    top: 4%;
-    left: 39.5%;
-    img{
-        width: 260px;
-    }
-}
-
-#leftArrow {
-    top: 80%;
-    left: 7%;
-    img{
-        width: 120px;
-    }
-}
-
 #rightArrow {
     top: 80%;
     right: 7%;
@@ -103,14 +89,29 @@ main {
     }
 }
 
+#room2 {
+    background-image: url('./media/testPage2Background.jpg');
+    display: none;
+}
+#recordPlayer {
+    top: 4%;
+    left: 39.5%;
+    img{
+        width: 260px;
+    }
+}
+#leftArrow {
+    top: 80%;
+    left: 7%;
+    img{
+        width: 120px;
+    }
+}
+
+
 #footer {
     margin: 30px auto 50px auto;
     width: fit-content;
     font-size: 1em;
     text-align: center;
-}
-
-.inaccessable {
-    display: none;
-    /* nuh uh!!! */
 }
