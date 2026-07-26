@@ -4,13 +4,19 @@ let urlParameter = new URLSearchParams(window.location.search).get("page"); // g
 // map of all room IDs and their names
 const roomMap = new Map([
     ["study", "The Study Room"], // (technology page)
-    ["lounge", "The Living Room"] // (media page)
-    // bedroom (blog page)
-    // kitchen (cooking page)
-    // basement (shrines page)
-    // outside (external links / email access)
+    ["lounge", "The Living Room"], // (media page)
+    ["bedroom", "The Bedroom"], // (blog page)
+    ["kitchen", "The Kitchen"], // (cooking page)
+    ["basement", "The Basement"], // (shrines page)
+    ["outdoors", "Outdoors"], // (external links / email access)
 
 ]);
+
+/*
+const taglineList = ["eternally a work in progress, but especially at the moment <3","made without ai!","now with more stuff!","powered by '70s music, hopes and dreams <3","personal websites,,,","TAGLINE HERE!! PLACEHOLDER!!1"];
+let randomElement = taglineList[(Math.floor(Math.random() * taglineList.length))];
+document.getElementById("tagline").innerHTML = randomElement;
+*/ //code that randomises tagline on website
 
 function goRoom(roomID) {
 
@@ -29,13 +35,12 @@ function goRoom(roomID) {
 
 
 function getRoomName(roomID) {
-
-if (roomMap.has(roomID)) {
-    return (roomMap.get(roomID));
-}
-else {
-    return null;
-}
+    if (roomMap.has(roomID)) {
+        return (roomMap.get(roomID));
+    }
+    else {
+        return null;
+    }
 }
 
 if (urlParameter == null) {
