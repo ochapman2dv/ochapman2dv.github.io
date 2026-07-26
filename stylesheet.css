@@ -64,7 +64,7 @@ p {
 }
 
 /* room 1 layout */
-#room1 {
+#study {
     background-image: url('./media/testPageBackground.jpg');
 
     #imac {
@@ -85,7 +85,7 @@ p {
 }
 
 /* room 2 layout */
-#room2 {
+#lounge {
     background-image: url('./media/testPage2Background.jpg');
     display: none;
 

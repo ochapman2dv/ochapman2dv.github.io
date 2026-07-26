@@ -1,10 +1,14 @@
-let currentRoom = "room1" // set room1 to be default room
+let currentRoom = "study" // set room1 to be default room
 let urlParameter = new URLSearchParams(window.location.search).get("page"); // get initial URL parameter
 
 // map of all room IDs and their names
 const roomMap = new Map([
-    ["room1", "Room 1"],
-    ["room2", "Room 2"]
+    ["study", "The Study Room"], // (technology page)
+    ["lounge", "The Living Room"] // (media page)
+    // bedroom (blog page)
+    // kitchen (cooking page)
+    // basement (shrines page)
+    // outside (external links / email access)
 
 ]);
 
@@ -19,7 +23,6 @@ function goRoom(roomID) {
     document.querySelector("link[rel*='icon']").href = "./media/"+roomID+".ico"; // change favicon
     currentRoom = roomID; // set currentRoom to roomID
     
-
     link = new URL(window.location.href), link.searchParams.set("page", currentRoom);
     window.history.replaceState(null, "", link); // update url with new page link
 }
@@ -35,12 +38,12 @@ else {
 }
 }
 
-if (getRoomName(urlParameter) == null) {
+if (urlParameter == null) {
     console.log("no parameter found!")
     // oops, no parameter! (puts user to default room)
 }
 
-if (urlParameter == "room1") {
+if (urlParameter == "study") {
     // do nothing, already at default room!
 }
 
