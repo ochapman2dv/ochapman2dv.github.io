@@ -13,48 +13,37 @@ body {
     background-color: #316065;
     font-family: Tahoma, Verdana, sans-serif;
     color: #9ff;
-    font-weight: 100;
     min-width: 100vw;
     min-height: 100vh;
 }
 
 h1 {
-    margin: 20px 0px 10px 60px;
+    margin: 20px 6%;
     font-size: 3.5em;
     color: #fff;
 }
 
-h2 {
+h2,h3,p {
+    margin: 20px 0% 40px 8%;
     font-style: italic;
     font-weight: 100;
     font-size: 1.2em;
 }
 
 h3 {
-    font-style: italic;
-    font-weight: 100;
+    margin: 40px auto;
+    text-align: center;
+    color: #fff;
+}
+
+p {
+    margin: 10px auto;
     font-size: 1em;
-    margin: 0px auto;
     width: 800px;
-}
-
-#tagline {
-    margin: 0px 0px 70px 100px;
-    width: 100%;
-}
-
-#navbar {
-    margin: 0px 0px 70px 100px;
-}
-
-#location {
-    width: 800px;
-    height: 20px;
 }
 
 .main {
     position: relative;
-    background-color: #316065;
     margin: 0px auto;
     width: 800px;
     height: 600px; /* white line is from this image being 599 pixels tall */
@@ -66,57 +55,52 @@ h3 {
         cursor: pointer;
         height: fit-content;
         position: absolute;
-
     }
 }
+
+/* 404 layout */
 #invalid {
     background-image: url('./media/catSpin.gif');
 }
 
-
+/* room 1 layout */
 #room1 {
     background-image: url('./media/testPageBackground.jpg');
-}
-#imac {
-    top: 28%;
-    left: 27%;
-    img{
-        width: 260px;
+
+    #imac {
+        top: 28%;
+        left: 27%;
+        img{
+            width: 260px;
+        }
     }
-}
-#rightArrow {
-    top: 80%;
-    right: 7%;
-    img{
-        transform: scaleX(-1);
-        width: 120px;
+    #rightArrow {
+        top: 80%;
+        right: 7%;
+        img{
+            transform: scaleX(-1);/* reverses the arrow */
+            width: 120px;
+        }
     }
 }
 
-
+/* room 2 layout */
 #room2 {
     background-image: url('./media/testPage2Background.jpg');
     display: none;
-}
-#recordPlayer {
-    top: 4%;
-    left: 39.5%;
-    img{
-        width: 260px;
-    }
-}
-#leftArrow {
-    top: 80%;
-    left: 7%;
-    img{
-        width: 120px;
-    }
-}
 
-
-#footer {
-    margin: 30px auto 50px auto;
-    width: fit-content;
-    font-size: 1em;
-    text-align: center;
+    #recordPlayer {
+        top: 4%;
+        left: 39.5%;
+        img{
+            width: 260px;
+        }
+    }
+    #leftArrow {
+        top: 80%;
+        left: 7%;
+        img{
+            width: 120px;
+        }
+    }
 }

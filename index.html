@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- look at you snooping around -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="icon" type="image/x-icon" href="./media/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./media/room1.ico">
     <title>Room 1 - Oli's House</title>
 </head>
 <body>
-    <noscript>You need javascript to fully enjoy my site's features - or just use the sitemap if you'd prefer :3</noscript>
+    <!-- website powered by me running in a big wheel -->
     <h1>Oli's House</h1>
-    <div id="tagline"><h2>eternally a work in progress, but especially at the moment <3 </h2> </div> <!--randomise tagline like in minecraft's title screen-->
+    <noscript><h2>You need javascript to fully enjoy my site's features - or just use the sitemap if you'd prefer :3</h2></noscript>
+    <h2>eternally a work in progress, but especially at the moment <3 </h2> </div> <!--randomise tagline like in minecraft's title screen-->
 
     <!-- room 1 -->
     <div id="room1" class="main">
@@ -19,7 +21,7 @@
             onmouseover="this.src='./media/imacHover.gif';"
             onmouseout="this.src='./media/imac.gif';"/>
         </a>
-        <a id="rightArrow" onclick="loadPage2()">    
+        <a id="rightArrow" onclick="goRoom('room2','Room 2')">    
             <img src="./media/arrow.gif" id="rightArrow" title="look right"
             onmouseover="this.src='./media/arrowHover.gif';"
             onmouseout="this.src='./media/arrow.gif';"/>
@@ -32,17 +34,15 @@
             onmouseover="this.src='./media/recordPlayerHover.gif';"
             onmouseout="this.src='./media/recordPlayer.gif';"/>
         </a>
-        <a id="leftArrow" onclick="loadPage1()">
+        <a id="leftArrow" onclick="goRoom('room1','Room 1')">
             <img src="./media/arrow.gif" id="leftArrow" title="look left"
             onmouseover="this.src='./media/arrowHover.gif';"
             onmouseout="this.src='./media/arrow.gif';"/>
         </a>
     </div>
 
-
-
-    <h3 id="location">You're Currently Visiting: Room 1</h3>
-    <div id="footer"><h2>made with love by oli,<br>2025 - the end of time</h2></div>
+    <p id="location">You're Currently Visiting: Room 1</p>
+    <h3>made with love by oli,<br>2025 - the end of time</h3>
     <script src="script.js"></script>
 </body>
 </html>
